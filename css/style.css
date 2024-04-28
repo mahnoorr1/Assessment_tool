@@ -1,0 +1,2056 @@
+/*basic reset*/
+/* line 2, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+* {
+    position: relative;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  
+  /* line 11, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  html {
+    background-color: #fff; }
+  
+  /* line 15, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  body {
+    /* font-family: "futura-pt", futura-pt, sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Allura', cursive; */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top; }
+  
+  /* line 29, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #scalecontainer {
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    width: 1100px;
+    height: 900px;
+    position: absolute;
+    text-align: center; }
+  
+  /* Bain IT styles */
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  
+  @-moz-keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  
+  /* line 49, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .fade-in {
+    opacity: 0;
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    visibility: hidden; }
+  
+  /* line 65, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a {
+    color: #2CAEE4;
+    font-weight: lighter;
+    text-decoration: none; }
+  
+  /* line 71, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  h1 {
+    font-size: 3.5em;
+    color: #666;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: left;
+    transition: 0.5s ease all;
+    line-height: 1.25em;
+    padding-left: 10px; }
+    /* line 82, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    h1 strong {
+      font-weight: 400; }
+  
+  /* line 88, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  h1#subhead {
+    color: #2CAEE4;
+    background-size: contain; }
+  
+  /* line 94, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #headline {
+    width: 800px; }
+  
+  /* stretch out to be 100% and to the left */
+  /* line 100, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  h2 {
+    color: #000;
+    font-size: 2.5em;
+    font-weight: 100;
+    background-color: #fff;
+    padding: 10px 0 10px 0px;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 30px;
+    width: 100%; }
+    /* line 111, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    h2 strong {
+      font-weight: 600; }
+  
+  /* line 116, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  h3 {
+    color: #777;
+    font-weight: 100;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding: 5px 0;
+    margin: 10px 0;
+    border-bottom: solid 2px #999; }
+  
+  /* line 126, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  h4 {
+    text-transform: uppercase;
+    font-weight: 100;
+    color: rgb(0, 122, 204);
+    font-size: 1.75rem; }
+    /* line 132, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    h4 .small {
+      color: #ccc;
+      font-size: 0.75rem;
+      display: block; }
+    /* line 138, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    h4 strong {
+      font-weight: 400; }
+  
+  /* line 144, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #source-bug {
+    display: block;
+    width: 140px;
+    position: absolute;
+    bottom: 0; }
+  
+  /* line 151, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  h5 {
+    color: #a3a3a3;
+    font-size: 1.25em;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.5em;
+    width: 65%;
+    background-color: transparent;
+    text-transform: uppercase; }
+  
+  /* line 163, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .sectionMarker {
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    left: 70px; }
+  
+  /* line 170, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #strategySubhead {
+    opacity: 1; }
+  
+  /* line 174, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #results h2 {
+    font-size: 2em;
+    padding: 5px 0; }
+  
+  /* line 179, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .subhead {
+    color: #666;
+    font-size: 0.75em;
+    font-weight: 100;
+    text-transform: none; }
+  
+  /* line 186, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .superscript {
+    font-size: 0.75em;
+    position: relative;
+    bottom: 0.33em; }
+  
+  /* line 192, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #results .section {
+    background-color: #f6f6f6; }
+  
+  /* line 196, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .section-number {
+    color: #fff;
+    background: #2CAEE4;
+    border-radius: 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px; }
+  
+  /* line 207, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #results .section-number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px; }
+  
+  /* line 213, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .question {
+    width: 100%;
+    font-size: 1.5em;
+    color: #777;
+    padding: 10px 0;
+    border-bottom: solid 3px #ececec;
+    margin-bottom: 20px; }
+  
+  /* CHART STYLING */
+  /* line 224, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .chart {
+    width: 795px;
+    height: 350px;
+    display: block;
+    position: relative;
+    left: 0;
+    border-bottom: solid 5px #efefef;
+    padding: 5px 0;
+    top: 150px;
+    vertical-align: baseline; }
+    /* line 235, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .bar {
+      position: absolute;
+      bottom: 0;
+      vertical-align: bottom;
+      background-color: #ccc;
+      width: 100px;
+      height: 0;
+      transition-duration: 2s; }
+    /* line 245, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .label {
+      position: absolute;
+      bottom: -60px;
+      width: 100px;
+      height: 50px;
+      transform-origin: center bottom;
+      font-size: 1.15em;
+      font-weight: 400; }
+    /* line 255, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .scoreNumber {
+      font-weight: bold;
+      font-size: 1.5em;
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      display: block;
+      left: 0;
+      color: #fff; }
+    /* line 267, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .strategy {
+      left: 40px; }
+    /* line 271, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .operation {
+      left: 195px; }
+    /* line 275, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .alignment {
+      left: 350px; }
+    /* line 279, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .enablement{
+      left: 505px; }
+
+    .chart .governance {
+      left: 660px;
+    }
+    /* line 283, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .results {
+      left: 665px; }
+    /* line 287, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .marker {
+      display: block;
+      width: 100px;
+      height: 0;
+      position: absolute; }
+    /* line 294, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .averageScore::before {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 5px #000;
+      left: -10px;
+      position: absolute; }
+    /* line 303, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .averageScore::after {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 5px #000;
+      right: -10px;
+      position: absolute; }
+    /* line 312, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .topScore::before {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 10px #2CAEE4;
+      left: -10px;
+      position: absolute; }
+    /* line 321, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .topScore::after {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 10px #2CAEE4;
+      right: -10px;
+      position: absolute; }
+    /* line 330, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .averageScore {
+      border-bottom: 5px dashed #000; }
+    /* line 334, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .topScore {
+      border-bottom: 5px solid #2CAEE4; }
+    /* line 338, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #strategyAvgScore {
+      bottom: 243.6px; }
+    /* line 342, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #strategyTopScore {
+      bottom: 294px; }
+    /* line 346, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #operationAvgScore {
+      bottom: 244.3px; }
+    /* line 350, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #operationTopScore {
+      bottom: 278px; }
+    /* line 354, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #alignmentAvgScore {
+      bottom: 232.4px; }
+    /* line 358, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #alignmentTopScore {
+      bottom: 280px; }
+    /* line 362, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #enablementAvgScore {
+      bottom: 220px; }
+    /* line 366, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #enablementTopScore {
+      bottom: 261px; }
+
+    .chart #governanceAvgScore {
+      bottom: 250px; }
+    .chart #governanceTopScore {
+      bottom: 280px; }
+    /* line 370, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #resultsAvgScore {
+      bottom: 265px; }
+    /* line 374, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart #resultsTopScore {
+      bottom: 277px; }
+    /* line 378, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart a.moreinfo {
+      display: block;
+      background: #efefef;
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+      padding: 3px;
+      text-decoration: none;
+      color: #999;
+      transform: translateX(-50%);
+      left: 50%;
+      position: relative;
+      top: 5px;
+      z-index: 100; }
+    /* line 394, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart a:hover {
+      background: #2CAEE4;
+      color: #fff; }
+    /* line 399, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .quintile-1 {
+      background-color: #03b14c; }
+    /* line 404, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .quintile-2 {
+      background-color: #95c33d; }
+    /* line 409, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .quintile-3 {
+      background-color: #d7a154; }
+    /* line 414, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .quintile-4 {
+      background-color: #dd7f55; }
+    /* line 419, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .chart .quintile-5 {
+      background-color: #cd6666; }
+  
+  /* Fix this in v4 */
+  /* line 425, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .axis {
+    display: inline;
+    position: absolute; }
+    /* line 429, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .axis li {
+      display: block;
+      list-style: none;
+      width: 30px;
+      text-align: center;
+      color: #666;
+      font-size: 1em;
+      margin: 56px 0;
+      height: 15px;
+      color: #999; }
+    /* line 441, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .axis li:last-child {
+      margin: 53px 0 0 0; }
+    /* line 445, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .axis li:first-child {
+      margin: 0 0 53px 0; }
+  
+  /* line 451, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #y-axis {
+    left: -30px;
+    width: 30px;
+    top: 135px;
+    height: 400px;
+    text-align: right; }
+  
+  /* line 460, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #right {
+    left: 67%; }
+  
+  /* line 464, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #left {
+    right: 67%;
+    text-align: right; }
+  
+  /* line 470, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .info {
+    color: #666;
+    font-size: 1.5em;
+    background-color: #fff;
+    line-height: 1.2em;
+    transition: 0.5s ease all;
+    padding-left: 10px; }
+  
+  /* line 479, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .alert {
+    color: #2CAEE4;
+    margin-bottom: 5px; }
+  
+  /* line 484, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #main {
+    padding: 1em;
+    background-color: #fff;
+    margin-top: -10px;
+    position: relative; }
+  
+  /* line 492, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #main-results {
+    padding: 1em;
+    background-color: #fff;
+    margin-top: -10px; }
+  
+  /* line 498, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #header {
+    width: 1000px;
+    position: relative;
+    z-index: 10;
+    margin: 10px auto 30px auto;
+    border-bottom: solid 10px #ececec; }
+  
+  /* line 507, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .logo {
+    margin: 10px; }
+  
+  /* line 511, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .contact {
+    background: #cdcdcd;
+    padding: 15px;
+    margin: 10px 10px;
+    position: relative; }
+  
+  /* line 518, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .contact .group {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0; }
+  
+  /* line 524, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .contact .group input {
+    width: 100%;
+    display: inline-block;
+    padding: 2px; }
+  
+  /* line 530, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .contact .subgroup {
+    width: 25%;
+    display: inline-block;
+    margin-right: 10px; }
+  
+  /* line 536, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .contact .group select {
+    width: 100%; }
+  
+  /* line 540, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .status {
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    display: inline-block; }
+  
+  /* line 547, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #readout {
+    display: none;
+    background-color: #2CAEE4;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.33em;
+    border: solid 2px #fff;
+    padding: 10px 25px;
+    margin: 10px; }
+  
+  /* END Bain IT styles */
+  /* results styles */
+  /* INPUT RANGE SLIDER */
+  /* line 566, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range] {
+    -webkit-appearance: none;
+    /* Hides the slider so that custom slider can be made */
+    width: 32%;
+    /* Specific width is required for Firefox. */
+    background: #ccc;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #fff, #666);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #fff, #666);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #fff, #666);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #fff, #666);
+    /* Standard syntax (must be last) */
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px #000; }
+  
+  /* line 582, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; }
+  
+  /* line 587, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]:focus {
+    outline: none;
+    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+  
+  /* line 591, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-ms-track {
+    width: 32%;
+    cursor: pointer;
+    background: transparent;
+    /* Hides the slider so custom styles can be added */
+    border-color: transparent;
+    color: transparent; }
+  
+  /* Special styling for WebKit/Blink */
+  /* line 600, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 5px;
+    background-color: #2CAEE4;
+    cursor: pointer;
+    margin-top: -14px;
+    /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    position: relative; }
+  
+  /* All the same stuff for Firefox */
+  /* line 613, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-moz-range-thumb {
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+    position: relative; }
+  
+  /* All the same stuff for IE */
+  /* line 624, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-ms-thumb {
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+    position: relative; }
+  
+  /* line 634, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    border-radius: 1.5px;
+    border: none; }
+  
+  /* line 642, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    border-radius: 1.5px;
+    border: 0.2px solid #000; }
+  
+  /* line 650, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent; }
+  
+  /* line 659, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-ms-fill-lower {
+    border: 0.2px solid #000;
+    border-radius: 2.6px; }
+  
+  /* line 663, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]:focus::-ms-fill-lower {
+    background: #ccc;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, white, black);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white, black);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white, black);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white, black);
+    /* Standard syntax (must be last) */ }
+  
+  /* line 670, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]::-ms-fill-upper {
+    background: #ccc;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, white, black);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white, black);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white, black);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white, black);
+    /* Standard syntax (must be last) */
+    border: 0.2px solid #000;
+    border-radius: 2.6px; }
+  
+  /* line 679, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, white, black);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white, black);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white, black);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white, black);
+    /* Standard syntax (must be last) */ }
+  
+  /*form styles*/
+  /* line 688, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #msform {
+    width: 1020px;
+    position: relative;
+    color: #333;
+    margin: 0 auto; }
+    /* line 694, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #msform #s21 {
+      top: -20px; }
+  
+  /* line 699, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #msform fieldset, #results-container {
+    border: 0 none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 100%;
+    top: 30px;
+    height: 500px;
+    /*stacking fieldsets above each other*/
+    position: relative; }
+  
+  /*Hide all except first fieldset*/
+  /* line 710, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #msform fieldset:not(:first-of-type), .hide {
+    display: none; }
+  
+  /* line 714, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10, #s11, #s12, #s13, #s14, #s15, #s16, #s17, #s18, #s19, #s20 {
+    overflow: visible; }
+  
+  /* line 718, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .show {
+    display: block; }
+  
+  /*inputs*/
+  /*
+  #msform input, #msform textarea {
+      box-sizing: border-box;
+      font-size: 13px;
+  }
+  */
+  /* line 730, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .wheel {
+    text-align: center;
+    background: #fff;
+    clear: both;
+    margin: 85px auto 0;
+    padding: 20px 0 150px;
+    vertical-align: bottom; }
+  
+  /*buttons*/
+  /* line 741, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  button, .button {
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    font-family: "futura-pt", sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 20px;
+    display: inline-block;
+    text-decoration: none;
+    float: right; }
+  
+  /* line 755, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #submit-button {
+    background-color: #2CAEE4;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    font-family: "futura-pt", sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px; }
+  
+  /* line 770, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .next {
+    background-color: #777; }
+  
+  /* line 774, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .previous {
+    background-color: #ececec;
+    color: #a3a3a3;
+    float: left;
+    display: block; }
+  
+  /* line 782, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .previous:after, .previous:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  
+  /* line 793, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .previous:after {
+    border-color: rgba(163, 163, 163, 0);
+    border-right-color: #2CAEE4;
+    border-width: 20px;
+    margin-left: -30px; }
+  
+  /* line 800, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #msform .action-button {
+    width: 100px;
+    background: #2CAEE4;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px; }
+  
+  /* line 811, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60; }
+  
+  /* line 815, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #resetButton {
+    position: absolute;
+    right: 50px;
+    bottom: -100px;
+    background-color: #ccc; }
+  
+  /* line 822, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #resultsBackButton {
+    position: absolute;
+    right: 100px;
+    bottom: -50px; }
+  
+  /*headings*/
+  /* line 829, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px; }
+  
+  /* line 835, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px; }
+  
+  /*progressbar*/
+  /* line 842, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #progressbar {
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+    width: 100%;
+    position: relative;
+    top: 40px;
+    height: 15px; }
+    /* line 851, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #progressbar li {
+      list-style-type: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1px;
+      width: 6.66%;
+      float: left;
+      position: relative; }
+    /* line 861, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #progressbar li:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 15px;
+      line-height: 15px;
+      display: block;
+      font-size: 1px;
+      font-weight: bold;
+      color: #ececec;
+      background: #ececec;
+      border-radius: 30px;
+      margin: 0 auto 5px auto;
+      text-align: center; }
+  
+  /*progressbar connectors*/
+  /* line 881, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; }
+  
+  /*marking active/completed steps green*/
+  /*The number of the step and the connector before it = green*/
+  /* line 889, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #progressbar li.active:before {
+    background: #2CAEE4;
+    color: #2CAEE4; }
+  
+  /* line 894, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #progressbar li.active:after {
+    background: #fff; }
+  
+  /* tooltip */
+  /* line 900, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .popup {
+    position: absolute;
+    width: 350px;
+    z-index: 12;
+    visibility: visible;
+    backface-visibility: visible;
+    background: #fff;
+    border: solid 15px #fff;
+    box-shadow: 3px 3px 5px #999;
+    padding: 0px 0px 0px 100px;
+    background: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-frontline-obsession-empowerment-220x207.gif) no-repeat top left #fff;
+    background-size: 80px;
+    color: #000; }
+  
+  /* line 915, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a > .popup:before, a > .popup:after {
+    content: "";
+    position: absolute;
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    bottom: -50px;
+    left: 10%;
+    margin-left: -10px; }
+  
+  /* line 925, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .popup h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #2CAEE4; }
+  
+  /* line 932, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .popup p {
+    margin-bottom: 5px; }
+  
+  /* line 936, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .popup b {
+    color: #2CAEE4;
+    text-align: right;
+    float: right; }
+  
+  /* line 942, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #bold-mission-popup {
+    bottom: -90px;
+    left: 520px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-insurgency-bold-mission-220x207.gif); }
+  
+  /* line 949, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #spikiness-popup {
+    bottom: -180px;
+    left: 620px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-insurgency-spikiness-220x207.gif); }
+  
+  /* line 956, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #limitless-horizon-popup {
+    bottom: -280px;
+    left: 620px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-insurgency-limitless-horizon-220x207.gif); }
+  
+  /* line 963, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #relentless-experimentation-popup {
+    bottom: -410px;
+    left: 550px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-frontline-obsession-relentless-experimentation-220x207.gif); }
+  
+  /* line 970, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #frontline-empowerment-popup {
+    bottom: -450px;
+    left: 450px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-frontline-obsession-empowerment-220x207.gif); }
+  
+  /* line 977, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #customer-advocacy-popup {
+    bottom: -410px;
+    left: 330px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-frontline-obsession-customer-advocacy-220x207.gif); }
+  
+  /* line 984, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #strong-cash-focus-popup {
+    bottom: -280px;
+    left: 260px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-owner-mindset-strong-cash-focus-220x207.gif); }
+  
+  /* line 991, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #bias-for-action-popup {
+    bottom: -180px;
+    left: 280px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-owner-mindset-bias-for-action-220x207.gif); }
+  
+  /* line 998, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #aversion-to-bureaucracy-popup {
+    bottom: -90px;
+    left: 380px;
+    display: none;
+    background-image: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-owner-mindset-aversion-220x207.gif); }
+  
+  /* line 1006, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #insurgency-popup {
+    bottom: -220px;
+    left: 540px;
+    display: none; }
+  
+  /* line 1012, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #frontline-obsession-popup {
+    bottom: -350px;
+    left: 450px;
+    display: none; }
+  
+  /* line 1018, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #owner-mindset-popup {
+    bottom: -220px;
+    left: 330px;
+    display: none; }
+  
+  /* line 1024, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a > .popup:before {
+    border-top: 50px solid #fff;
+    margin-top: 5px; }
+  
+  /* line 1029, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a.moreinfo {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #333;
+    position: relative; }
+  
+  /* line 1036, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a.moreinfo span {
+    z-index: 10;
+    display: none;
+    padding: 14px 20px;
+    margin-top: -120px;
+    margin-left: -50px;
+    width: 200px;
+    line-height: 1.3em; }
+  
+  /* line 1046, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a.moreinfo:hover span {
+    display: inline;
+    position: absolute;
+    color: #fff;
+    background: #333;
+    box-shadow: 3px 3px 5px #000;
+    overflow: visible; }
+  
+  /* line 1055, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .tooltip {
+    z-index: 20;
+    position: absolute;
+    bottom: 30px;
+    border: 0;
+    left: 50%;
+    transform: translateX(-30%);
+    font-weight: 400;
+    font-size: 0.9em; }
+  
+  /* line 1067, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a.moreinfo > .tooltip:before, a.moreinfo > .tooltip:after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px; }
+  
+  /* line 1077, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  a > .tooltip:before {
+    border-top: 10px solid #333;
+    margin-top: 5px; }
+  
+  /* CIRLCE CIRCLE CIRCLE */
+  /* line 1083, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .component {
+    position: relative;
+    margin-bottom: 3em;
+    height: 40em;
+    font-family: 'futura pt', Arial, sans-serif;
+    margin-bottom: -3em; }
+  
+  /* line 1091, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .cn-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    margin-top: -2.75em;
+    margin-left: -2.75em;
+    padding-top: 0;
+    width: 5.5em;
+    height: 5.5em;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    background-color: #fff;
+    color: #2CAEE4;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-style: normal;
+    -webkit-backface-visibility: hidden; }
+  
+  /* line 1115, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    margin-top: -13em;
+    margin-left: -13.5em;
+    width: 27em;
+    height: 27em;
+    border-radius: 50%;
+    background: transparent;
+    opacity: 0;
+    -webkit-transition: all .73s ease 0.3s;
+    -moz-transition: all .73s ease 0.3s;
+    transition: all .73s ease 0.3s;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+    pointer-events: none;
+    overflow: hidden;
+    border: solid 0.25em #fff; }
+  
+  /* line 1139, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    margin-top: -9.75em;
+    margin-left: -10em;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all .73s ease 0.3s;
+    -moz-transition: all .73s ease 0.3s;
+    transition: all .73s ease 0.3s;
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    transform: scale(0.1);
+    pointer-events: none;
+    overflow: hidden;
+    border: solid 0.25em #fff; }
+  
+  /*cover to prevent extra space of anchors from being clickable*/
+  /* line 1163, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper:after {
+    content: ".";
+    display: block;
+    font-size: 2em;
+    width: 6.2em;
+    height: 6.2em;
+    position: absolute;
+    left: 50%;
+    margin-left: -3.1em;
+    top: 50%;
+    margin-top: -3.1em;
+    border-radius: 50%;
+    z-index: 10;
+    color: transparent; }
+  
+  /* line 1179, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2:after {
+    content: ".";
+    display: block;
+    font-size: 2em;
+    width: 6.2em;
+    height: 6.2em;
+    position: absolute;
+    left: 50%;
+    margin-left: -3.1em;
+    top: 50%;
+    margin-top: -3.1em;
+    border-radius: 50%;
+    z-index: 10;
+    color: transparent; }
+  
+  /* line 1195, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav {
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-transition: all .73s ease;
+    -moz-transition: all .73s ease;
+    transition: all .73s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    pointer-events: auto; }
+  
+  /* line 1208, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin-top: -1.3em;
+    margin-left: -10em;
+    width: 10em;
+    height: 10em;
+    font-size: 1.5em;
+    -webkit-transition: all .73s ease;
+    -moz-transition: all .73s ease;
+    transition: all .73s ease;
+    -webkit-transform: rotate(70deg) skew(50deg);
+    -moz-transform: rotate(70deg) skew(50deg);
+    -ms-transform: rotate(70deg) skew(50deg);
+    transform: rotate(70deg) skew(50deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    pointer-events: none;
+    border: solid 2px #fff; }
+  
+  /* line 1232, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper li a {
+    position: absolute;
+    right: -7.25em;
+    bottom: -7.25em;
+    display: block;
+    width: 14.5em;
+    height: 14.5em;
+    border-radius: 100%;
+    /*
+      background: #429a67;
+      background: -webkit-radial-gradient(transparent 35%, #429a67 35%);
+      background: -moz-radial-gradient(transparent 35%, #429a67 35%);
+      background: radial-gradient(transparent 35%, #429a67 35%); */
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 2;
+    -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+    -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
+    -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
+    transform: skew(-50deg) rotate(-70deg) scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: auto; }
+  
+  /* line 1260, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper li a span {
+    position: relative;
+    top: 1em;
+    left: 10.5em;
+    width: 110px;
+    display: block;
+    font-size: .5em;
+    font-weight: 100;
+    line-height: 1em;
+    text-align: center;
+    vertical-align: middle; }
+  
+  /* line 1273, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper li#bold-mission a .section-label, .csstransforms .cn-wrapper li#spikiness a .section-label, .csstransforms .cn-wrapper li#limitless-horizon a .section-label, .csstransforms .cn-wrapper li#bias-for-action a .section-label {
+    top: 1.5em;
+    left: 10.75em; }
+  
+  /* line 1278, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2 .circle-sections {
+    z-index: 20; }
+  
+  /* line 1283, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2 .circle-sections li {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin-top: -3.3em;
+    margin-left: -10em;
+    width: 10em;
+    height: 10em;
+    font-size: 1.5em;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: rotate(70deg) skew(50deg);
+    -moz-transform: rotate(70deg) skew(50deg);
+    -ms-transform: rotate(70deg) skew(50deg);
+    transform: rotate(70deg) skew(50deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    pointer-events: none;
+    border: solid 2px #fff; }
+  
+  /* line 1310, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2 .circle-sections li a {
+    position: absolute;
+    right: -3.75em;
+    bottom: -3.75em;
+    display: block;
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 50%;
+    /*
+      background: #429a67;
+      background: -webkit-radial-gradient(transparent 35%, #429a67 35%);
+      background: -moz-radial-gradient(transparent 35%, #429a67 35%);
+      background: radial-gradient(transparent 35%, #429a67 35%); */
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 2;
+    -webkit-transform: skew(-30deg) rotate(-30deg) scale(1);
+    -moz-transform: skew(-30deg) rotate(-30deg) scale(1);
+    -ms-transform: skew(-30deg) rotate(-30deg) scale(1);
+    transform: skew(30deg) rotate(-30deg) scale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: auto; }
+  
+  /* line 1339, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2 .circle-sections li a span {
+    position: relative;
+    top: 0em;
+    left: 3.5em;
+    width: 110px;
+    display: block;
+    font-size: .5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1em;
+    text-align: center; }
+  
+  /* line 1353, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2 .circle-sections li#owner-mindset a span {
+    top: -1em; }
+  
+  /* line 1357, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .cn-wrapper2 .circle-sections li:nth-child(2) a span {
+    transform: rotate(180deg); }
+  
+  /* line 1362, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms li:nth-child(4) a span {
+    transform: rotate(180deg); }
+  
+  /* line 1367, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms li:nth-child(5) a span {
+    transform: rotate(180deg); }
+  
+  /* line 1372, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms li:nth-child(6) a span {
+    transform: rotate(180deg); }
+  
+  /*
+  .csstransforms .cn-wrapper li a:hover,
+  .csstransforms .cn-wrapper li a:active,
+  .csstransforms .cn-wrapper li a:focus {
+      background: -webkit-radial-gradient(transparent 35%, #449e6a 35%);
+      background: -moz-radial-gradient(transparent 35%, #449e6a 35%);
+      background: radial-gradient(transparent 35%, #449e6a 35%);
+  }
+  
+  */
+  /* line 1388, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li {
+    -webkit-transition: all .73s ease .3s;
+    -moz-transition: all .73s ease .3s;
+    transition: all .75s ease .75s; }
+  
+  /* line 1394, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:first-child {
+    -webkit-transform: rotate(90deg) skew(50deg);
+    -moz-transform: rotate(90deg) skew(50deg);
+    -ms-transform: rotate(90deg) skew(50deg);
+    transform: rotate(90deg) skew(50deg); }
+  
+  /* line 1401, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(2) {
+    -webkit-transform: rotate(130deg) skew(50deg);
+    -moz-transform: rotate(130deg) skew(50deg);
+    -ms-transform: rotate(130deg) skew(50deg);
+    transform: rotate(130deg) skew(50deg); }
+  
+  /* line 1408, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(3) {
+    -webkit-transform: rotate(170deg) skew(50deg);
+    -moz-transform: rotate(170deg) skew(50deg);
+    -ms-transform: rotate(170deg) skew(50deg);
+    transform: rotate(170deg) skew(50deg); }
+  
+  /* line 1415, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(4) {
+    -webkit-transform: rotate(210deg) skew(50deg);
+    -moz-transform: rotate(210deg) skew(50deg);
+    -ms-transform: rotate(210deg) skew(50deg);
+    transform: rotate(210deg) skew(50deg); }
+  
+  /* line 1422, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(5) {
+    -webkit-transform: rotate(250deg) skew(50deg);
+    -moz-transform: rotate(250deg) skew(50deg);
+    -ms-transform: rotate(250deg) skew(50deg);
+    transform: rotate(250deg) skew(50deg); }
+  
+  /* line 1429, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(6) {
+    -webkit-transform: rotate(290deg) skew(50deg);
+    -moz-transform: rotate(290deg) skew(50deg);
+    -ms-transform: rotate(290deg) skew(50deg);
+    transform: rotate(290deg) skew(50deg); }
+  
+  /* line 1436, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(7) {
+    -webkit-transform: rotate(330deg) skew(50deg);
+    -moz-transform: rotate(330deg) skew(50deg);
+    -ms-transform: rotate(330deg) skew(50deg);
+    transform: rotate(330deg) skew(50deg); }
+  
+  /* line 1443, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(8) {
+    -webkit-transform: rotate(10deg) skew(50deg);
+    -moz-transform: rotate(10deg) skew(50deg);
+    -ms-transform: rotate(10deg) skew(50deg);
+    transform: rotate(10deg) skew(50deg); }
+  
+  /* line 1449, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav li:nth-child(9) {
+    -webkit-transform: rotate(50deg) skew(50deg);
+    -moz-transform: rotate(50deg) skew(50deg);
+    -ms-transform: rotate(50deg) skew(50deg);
+    transform: rotate(50deg) skew(50deg); }
+  
+  /* section names */
+  /* line 1457, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav .circle-sections li {
+    -webkit-transition: all .3s ease .3s;
+    -moz-transition: all .3s ease .3s;
+    transition: all .75s ease .75s; }
+  
+  /* line 1463, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav .circle-sections li:first-child {
+    -webkit-transform: rotate(90deg) skew(-30deg);
+    -moz-transform: rotate(90deg) skew(-30deg);
+    -ms-transform: rotate(90deg) skew(-30deg);
+    transform: rotate(90deg) skew(-30deg); }
+  
+  /* line 1470, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav .circle-sections li:nth-child(2) {
+    -webkit-transform: rotate(210deg) skew(-30ddeg);
+    -moz-transform: rotate(210deg) skew(-30ddeg);
+    -ms-transform: rotate(210deg) skew(-30ddeg);
+    transform: rotate(210deg) skew(-30deg); }
+  
+  /* line 1477, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms .opened-nav .circle-sections li:nth-child(3) {
+    -webkit-transform: rotate(300deg) skew(-30ddeg);
+    -moz-transform: rotate(300deg) skew(-30ddeg);
+    -ms-transform: rotate(330deg) skew(-30ddeg);
+    transform: rotate(330deg) skew(-30deg); }
+  
+  /* line 1484, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .no-csstransforms .cn-wrapper {
+    overflow: hidden;
+    margin: 10em auto;
+    padding: .5em;
+    text-align: center; }
+  
+  /* line 1491, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .no-csstransforms .cn-wrapper ul {
+    display: inline-block; }
+  
+  /* line 1495, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .no-csstransforms .cn-wrapper li {
+    float: left;
+    width: 5em;
+    height: 5em;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1em;
+    line-height: 5em; }
+  
+  /* line 1505, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .no-csstransforms .cn-wrapper li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none; }
+  
+  /* line 1513, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .no-csstransforms .cn-wrapper li a:hover,
+  .no-csstransforms .cn-wrapper li a:active,
+  .no-csstransforms .cn-wrapper li a:focus {
+    background-color: #f8f8f8; }
+  
+  /* line 1519, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .no-csstransforms .cn-wrapper li.active a {
+    background-color: #6F325C;
+    color: #fff; }
+  
+  /* line 1524, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .no-csstransforms .cn-button {
+    display: none; }
+  
+  /* CIRCLE KEY */
+  /* line 1530, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #key {
+    position: absolute;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+    width: 180px;
+    top: 25px;
+    left: 340px;
+    text-transform: uppercase; }
+  
+  /* line 1541, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .key-block {
+    display: block;
+    height: 30px;
+    width: 180px;
+    font-size: 1em;
+    position: relative;
+    margin: 0 0 10px 0; }
+  
+  /* line 1550, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .key-block::after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    width: 40px;
+    border-bottom: solid 5px #2CAEE4;
+    transform: translateY(-50%);
+    top: 25%;
+    display: block;
+    height: 0; }
+  
+  /* line 1562, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #quintileKey {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+    /* line 1570, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #quintileKey li {
+      text-align: left;
+      margin: 0 0 6px 0;
+      display: block;
+      width: 50px;
+      height: 15px; }
+    /* line 1578, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #quintileKey li::after {
+      content: '';
+      position: absolute;
+      left: -20px;
+      width: 15px;
+      transform: translateY(-50%);
+      top: 50%;
+      display: block;
+      height: 15px; }
+    /* line 1589, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #quintileKey .quintile-1::after {
+      background-color: #03b14c; }
+    /* line 1594, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #quintileKey .quintile-2::after {
+      background-color: #95c33d; }
+    /* line 1599, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #quintileKey .quintile-3::after {
+      background-color: #d7a154; }
+    /* line 1604, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #quintileKey .quintile-4::after {
+      background-color: #dd7f55; }
+    /* line 1609, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #quintileKey .quintile-5::after {
+      background-color: #cd6666; }
+  
+  /* line 1614, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #topScore::after {
+    border-bottom-color: #2CAEE4; }
+  
+  /* line 1618, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #averageScore::after {
+    border-bottom: #000 dashed 5px; }
+  
+  /* line 1622, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #yourScore::after {
+    border-bottom: solid 20px #ccc; }
+  
+  /* RADIO BUTTONS HTML5 Boilerplate accessible hidden styles */
+  /* line 1629, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+  
+  /* One radio button per line */
+  /* line 1641, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    width: 140px;
+    font-weight: bold;
+    vertical-align: text-top;
+    width: 18%; }
+  
+  /* line 1656, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"] + span {
+    display: inline-block;
+    position: relative; }
+  
+  /* the basic, unchecked style */
+  /* line 1662, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"] + span:before {
+    content: '';
+    display: inline-block;
+    width: 6em;
+    height: 1.5em;
+    vertical-align: 1.25em;
+    transform: translate(-50%, -100%);
+    left: 50%;
+    top: -5px;
+    transition: 0.5s ease all;
+    position: absolute;
+    padding-top: 25px; }
+  
+  /* line 1677, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].strongly-disagree + span:before {
+    background: url(images/strongly-disagree.png) no-repeat bottom center; }
+  
+  /* line 1681, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].disagree + span:before {
+    background: url(images/disagree.png) no-repeat bottom center; }
+  
+  /* line 1685, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].neutral + span:before {
+    background: url(images/neutral.png) no-repeat bottom center; }
+  
+  /* line 1689, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].agree + span:before {
+    background: url(images/agree.png) no-repeat bottom center; }
+  
+  /* line 1693, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].strongly-agree + span:before {
+    background: url(images/strongly-agree.png) no-repeat bottom center; }
+  
+  /* the checked style using the :checked pseudo class */
+  /* line 1699, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].strongly-disagree:checked + span:before {
+    background: url(images/strongly-disagree-check.png) no-repeat bottom center; }
+  
+  /* line 1703, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].disagree:checked + span:before {
+    background: url(images/disagree-check.png) no-repeat bottom center; }
+  
+  /* line 1707, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].neutral:checked + span:before {
+    background: url(images/neutral-check.png) no-repeat bottom center; }
+  
+  /* line 1711, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].agree:checked + span:before {
+    background: url(images/agree-check.png) no-repeat bottom center; }
+  
+  /* line 1715, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"].strongly-agree:checked + span:before {
+    background: url(images/strongly-agree-check.png) no-repeat bottom center; }
+  
+  /* never forget focus styling */
+  /* line 1720, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  [type="radio"]:focus + span:after {
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: -0.125em; }
+  
+  /* ---------------- */
+  /* line 1728, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #answers {
+    background: #2CAEE4; }
+  
+  /* line 1732, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .wrapper {
+    display: block;
+    height: 200px;
+    background: #ccc; }
+  
+  /* line 1738, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #learnmore h4 {
+    font-size: 1.5em;
+    color: #777;
+    padding: 10px 0; }
+  
+  /* line 1744, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #learnmore ul {
+    padding: 0 0 0 55px;
+    background: url(http://www.bain.com/Images/strategic-planning-that-produces-real-strategy-220x207.jpg) no-repeat left top;
+    background-size: contain; }
+  
+  /* line 1750, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #learnmore a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #2CAEE4; }
+  
+  /* line 1756, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #learnmore a:hover {
+    text-decoration: underline;
+    font-size: 1.2em; }
+  
+  /* line 1761, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #learnmore li {
+    font-weight: 100;
+    color: #777;
+    font-size: 0.8em;
+    padding: 5px 0; }
+  
+  /* line 1768, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  h4.metaheader {
+    color: #777;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 10px;
+    font-weight: 100;
+    font-size: 1em; }
+  
+  /* line 1777, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #overall-result {
+    font-size: 0.75em;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    padding: 30px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 140px; }
+    /* line 1791, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #overall-result span {
+      font-size: 3em;
+      font-weight: bold;
+      display: block; }
+    /* line 1797, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #overall-result span.quintile-1 {
+      color: #03b14c; }
+    /* line 1801, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #overall-result span.quintile-2 {
+      color: #95c33d; }
+    /* line 1805, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #overall-result span.quintile-3 {
+      color: #d7a154; }
+    /* line 1809, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #overall-result span.quintile-4 {
+      color: #dd7f55; }
+    /* line 1813, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #overall-result span.quintile-5 {
+      color: #cd6666; }
+  
+  /* line 1818, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .metatext {
+    font-size: 1.33em;
+    line-height: 1.33em;
+    color: #000; }
+  
+  /* line 1824, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #development-opportunities {
+    display: none; }
+  
+  /* line 1828, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .opportunity li {
+    font-size: 1.33em;
+    line-height: 1.33em;
+    color: #333;
+    padding-bottom: 20px;
+    margin: 20px 0;
+    padding-left: 175px;
+    background: url(http://bainfounders.wpengine.com/wp-content/uploads/2015/12/fm-wheel-frontline-obsession-empowerment-220x207.gif) no-repeat top left;
+    background-size: 15%;
+    border-bottom: solid 1px #999; }
+  
+  /* line 1840, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .opportunity li:last-child {
+    border-bottom: none; }
+  
+  /* line 1844, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .opportunity li b {
+    font-weight: bold;
+    color: #2CAEE4;
+    font-size: 1.25em; }
+    /* CSS for the tick appearance */
+.opportunity li.checked::before {
+    content: '\2713'; /* Unicode character for a checkmark */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: green; /* Color of the checkmark */
+}
+
+  
+  /* line 1850, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #more-insights {
+    padding-top: 20px;
+    background: #fff;
+    margin-top: -30px;
+    display: none; }
+  
+  /* line 1859, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .intro {
+    font-style: italic;
+    margin-bottom: 15px; }
+  
+  /* line 1864, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .results h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    font-style: normal;
+    color: #2CAEE4;
+    font-size: 1.25em;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 60px 0 0 0;
+    vertical-align: middle;
+    z-index: 11;
+    box-sizing: border-box;
+    margin-top: -75px;
+    margin-left: -75px; }
+  
+  /* line 1889, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 110px;
+    width: 95%;
+    background-color: transparent;
+    z-index: 500;
+    border-top: solid 3px #efefef;
+    text-align: left;
+    margin: auto;
+    padding-top: 10px; }
+  
+  /* line 1904, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #bainlogo {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  
+  /* line 1910, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #founders-link {
+    margin: 10px 0;
+    padding: 10px 0;
+    display: none;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%); }
+  
+  /* line 1921, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #founders-link img {
+    padding: 10px 0; }
+  
+  /* line 1925, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .csstransforms #founders-link {
+    display: block; }
+  
+  /* line 1929, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #loading {
+    font-size: 1.5em;
+    color: #777;
+    display: block;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%); }
+  
+  /*share bar */
+  /* line 1941, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #shareBox-footer {
+    z-index: 1000;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    min-height: 30px; }
+  
+  /* line 1953, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #shareBox-side {
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 111px;
+    width: 45px; }
+  
+  /* line 1962, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #shareBox-side strong.shareText {
+    font-size: 11px; }
+  
+  /* line 1963, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #shareBox-footer strong.shareText {
+    font-size: 11px; }
+  
+  /* line 1964, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  div.BainFooter {
+    clear: left;
+    margin: 10px 0px 10px 0px;
+    min-height: 66px; }
+  
+  /* line 1965, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  div.BainFooterLeft {
+    width: 70%;
+    float: left; }
+  
+  /* line 1966, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  div.BainLearnMore {
+    font-size: 14px;
+    margin-bottom: 5px; }
+  
+  /* line 1967, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  div.BainPubInfo {
+    clear: left; }
+  
+  /* line 1968, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  div.BainPubIcon {
+    float: left;
+    width: 44px;
+    height: 41px;
+    margin-right: 10px; }
+  
+  /* line 1969, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  div.BainPubText {
+    float: left;
+    line-height: 22px;
+    font-size: 14px; }
+  
+  /* line 1970, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  div.BainFooterRight {
+    width: 30%;
+    float: left;
+    text-align: right; }
+  
+  /* line 1972, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #callToAction {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 580px;
+    padding-left: 30px;
+    border-left: solid 1px #ccc;
+    text-align: left; }
+    /* line 1983, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #callToAction h3 {
+      border-bottom: none;
+      text-transform: none;
+      font-weight: bold;
+      color: #2CAEE4; }
+    /* line 1989, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #callToAction a {
+      display: block;
+      width: 230px; 
+      height: 40px;
+      color: #fff;
+      background: #2CAEE4;
+      margin: 10px 0px 25px 0px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      text-transform: uppercase; }
+    /* line 2000, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    #callToAction p {
+      font-size: 1.25em; }
+  
+  /* line 2008, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #overallCircle .circle .mask .quintile-1 {
+    border-color: #03b14c; }
+  
+  /* line 2012, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #overallCircle .circle .mask .quintile-2 {
+    border-color: #95c33d; }
+  
+  /* line 2016, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #overallCircle .circle .mask .quintile-3 {
+    border-color: #d7a154; }
+  
+  /* line 2020, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #overallCircle .circle .mask .quintile-4 {
+    border-color: #dd7f55; }
+  
+  /* line 2024, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  #overallCircle .circle .mask .quintile-5 {
+    border-color: #cd6666; }
+  
+  /* line 2031, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+  .radial-progress {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 20px; }
+    /* line 2048, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .radial-progress .circle .mask, .radial-progress .circle .fill, .radial-progress .circle .shadow {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      border-radius: 50%; }
+    /* line 2057, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .radial-progress .circle .mask, .radial-progress .circle .fill {
+      -webkit-backface-visibility: hidden;
+      transition: -webkit-transform 2s;
+      transition: -ms-transform 2s;
+      transition: transform 2s; }
+    /* line 2063, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .radial-progress .circle .mask {
+      clip: rect(0px, 100px, 100px, 50px); }
+      /* line 2065, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+      .radial-progress .circle .mask .fill {
+        clip: rect(0px, 50px, 100px, 0px);
+        background-color: transparent;
+        border: solid 10px #2CAEE4; }
+    /* line 2072, /Users/georgpedersen/Google Drive/bain/Interactive/Bain Agility Quotient/v9/css/style.scss */
+    .radial-progress .inset {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      margin-left: 10px;
+      margin-top: 10px;
+      background-color: transparent;
+      border-radius: 50%; }
+  
+  /*# sourceMappingURL=style.css.map */
