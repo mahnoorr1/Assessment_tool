@@ -784,8 +784,8 @@
   }
   
   .previous {
-      background-color: #ececec;
-      color: #a3a3a3;
+      background-color: #3189c9;
+      color: #f8fbfd;
       float: left;
       display: block;
   }
@@ -873,10 +873,10 @@
       li:before {
           content: counter(step);
           counter-increment: step;
-          width: 15px;
+          width: 25px;
           line-height: 15px;
           display: block;
-          font-size: 1px;
+          font-size: 3px;
           font-weight: bold;
           color: #ececec;
           background: #ececec;
@@ -1675,7 +1675,7 @@
     content: '';
     display: inline-block;
     width: 6em;
-    height: 1.5em;
+    height: 6em;
     vertical-align: 1.25em;
     transform: translate(-50%,-100%);
       left: 50%;
@@ -1684,6 +1684,11 @@
       position: absolute;
       padding-top: 25px;
        
+  }
+
+  .below {
+    padding-top: 20px;
+    margin-top: 20px;
   }
   
   [type="radio"].strongly-disagree + span:before {
